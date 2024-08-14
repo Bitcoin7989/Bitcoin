@@ -1,0 +1,111 @@
+body {
+            margin: 0;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column; /* Align children in a column */
+            align-items: center;
+            justify-content: center;
+            background-color: #0f0e17;
+            overflow: hidden; 
+            background-image: url('https://bitcoin7989.github.io/Bitcoin/Bitcoin.png');
+            background-size: contain; /* Changed to cover */
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        header {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: #fffffe;
+            background-color: #272343;
+            text-align: center;
+            z-index: 1000; /* Ensures it stays above other content */
+            background-size: contain;
+            backdrop-filter: blur(2px); /* Applies the blur effect */
+            -webkit-backdrop-filter: blur(2px); /* For Safari */
+        }
+
+        .header h2 {
+            margin: 0; /* Removes default margin */
+            font-size: 2rem; /* Adjust size as needed */
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly more prominent shadow */
+            padding: 10px;
+            max-width: max-content;
+            width: 100%;
+            background-size: contain;
+            backdrop-filter: blur(5px); /* Applies the blur effect */
+            -webkit-backdrop-filter: blur(5px); /* For Safari */
+            
+        }
+
+        h1 {
+            color: #33272a;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #fff;
+        }
+        .space {
+      height: 20px; 
+      width: 10%; }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #fff; /* Ensure text is visible */
+            padding: 10px 0;
+            font-size: 1.0rem;
+            text-align: center;
+        }
+
+        .footer a {
+            color: floralwhite; /* Link color */
+        }
+
+        .fa-temperature-low {
+            color:#ff0909; 
+            font-size: 3rem; 
+        }
+
+        .fa-tint {
+            color:#00add6; 
+            font-size: 3rem;
+        }
+
+        .fa-spinner {
+      font-size: 3rem; /* Adjust size of the spinner */
+      color: #eeff00; /* Color of the spinner */
+      animation: spin 0.7s linear infinite; /* Spin animation */
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+        .fa-bitcoin {
+            font-size:1.5rem;
+            color:#ff5e00;
+        }
