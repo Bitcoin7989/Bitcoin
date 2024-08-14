@@ -65,6 +65,7 @@ body {
         .label {
             font-weight: bold;
             color: #fff;
+            font-size: 2.5rem;
         }
         .space {
       height: 20px; 
