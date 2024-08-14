@@ -4247,12 +4247,12 @@
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.eot);
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.eot?#iefix),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.woff2),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.woff),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.ttf),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-brands-400.svg#fontawesome);
+  src: url(../fa-brands-400.eot);
+  src: url(../fa-brands-400.eot?#iefix) format("embedded-opentype"),
+    url(../fa-brands-400.woff2) format("woff2"),
+    url(../fa-brands-400.woff) format("woff"),
+    url(../fa-brands-400.ttf) format("truetype"),
+    url(../fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -4262,12 +4262,12 @@
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.eot);
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.eot?#iefix),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.woff2),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.woff),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.ttf),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-regular-400.svg#fontawesome);
+  src: url(../fa-regular-400.eot);
+  src: url(../fa-regular-400.eot?#iefix) format("embedded-opentype"),
+    url(../fa-regular-400.woff2) format("woff2"),
+    url(../fa-regular-400.woff) format("woff"),
+    url(../fa-regular-400.ttf) format("truetype"),
+    url(../fa-regular-400.svg#fontawesome) format("svg");
 }
 .far {
   font-weight: 400;
@@ -4277,12 +4277,12 @@
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.eot);
-  src: url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.eot?#iefix),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.woff2),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.woff),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.ttf),
-    url(https://bitcoin7989.github.io/Bitcoin/fa-solid-900.svg#fontawesome);
+  src: url(../fa-solid-900.eot);
+  src: url(../fa-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(../fa-solid-900.woff2) format("woff2"),
+    url(../fa-solid-900.woff) format("woff"),
+    url(../fa-solid-900.ttf) format("truetype"),
+    url(../fa-solid-900.svg#fontawesome) format("svg");
 }
 .fa,
 .far,
