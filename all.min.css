@@ -4252,7 +4252,6 @@
     url(../Bitcoin/fa-brands-400.woff2) format("woff2"),
     url(../Bitcoin/fa-brands-400.woff) format("woff"),
     url(../Bitcoin/fa-brands-400.ttf) format("truetype"),
-      url(../Bitcoin/moon_get-Heavy.otf) format("truetype"),
     url(../Bitcoin/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
@@ -4268,7 +4267,6 @@
     url(../Bitcoin/fa-regular-400.woff2) format("woff2"),
     url(../Bitcoin/fa-regular-400.woff) format("woff"),
     url(../Bitcoin/fa-regular-400.ttf) format("truetype"),
-      url(../Bitcoin/moon_get-Heavy.otf) format("truetype"),
     url(../Bitcoin/fa-regular-400.svg#fontawesome) format("svg");
 }
 .far {
@@ -4284,9 +4282,18 @@
     url(../Bitcoin/fa-solid-900.woff2) format("woff2"),
     url(../Bitcoin/fa-solid-900.woff) format("woff"),
     url(../Bitcoin/fa-solid-900.ttf) format("truetype"),
-      url(../Bitcoin/moon_get-Heavy.otf) format("truetype"),
     url(../Bitcoin/fa-solid-900.svg#fontawesome) format("svg");
 }
+
+
+@font-face {
+  font-family: "Custom Font";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url(../Bitcoin/moon_get-Heavy.otf) format("opentype");
+}
+
 .fa,
 .far,
 .fas {
