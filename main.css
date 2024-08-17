@@ -2,16 +2,15 @@ body {
             margin: 0;
             height: 100vh; 
             display: flex;
-            flex-direction: column; /* Align children in a column */
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             background-color: #0f0e17;
             overflow: hidden; 
             background-image: url('https://bitcoin7989.github.io/Bitcoin/Bitcoin.png');
-            background-size: contain; /* Changed to cover */
+            background-size: contain;
             background-position: center;
-            background-repeat: no-repeat;
-            font-family: "GODOFWAR", 
+            background-repeat: no-repeat; 
         }
 
         header {
@@ -25,33 +24,32 @@ body {
             color: #fffffe;
             background-color: #272343;
             text-align: center;
-            z-index: 1000; /* Ensures it stays above other content */
+            z-index: 1000;
             background-size: contain;
-            backdrop-filter: blur(2px); /* Applies the blur effect */
-            -webkit-backdrop-filter: blur(2px); /* For Safari */
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
         }
 
         .header h2 {
-            margin: 0; /* Removes default margin */
-            font-size: 2rem; /* Adjust size as needed */
+            margin: 0;
+            font-size: 2rem;
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly more prominent shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 10px;
             max-width: max-content;
             width: 100%;
             background-size: contain;
-            backdrop-filter: blur(5px); /* Applies the blur effect */
-            -webkit-backdrop-filter: blur(5px); /* For Safari */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             
         }
 
 
        h1, h2, h3, p {
-             font-family: "Custom Font", GODOFWAR;
                    font-family: "GODOFWAR";
                }
 
@@ -82,14 +80,14 @@ body {
             bottom: 0;
             left: 0;
             width: 100%;
-            color: #fff; /* Ensure text is visible */
+            color: #fff; 
             padding: 10px 0;
             font-size: 1.0rem;
             text-align: center;
         }
 
         .footer a {
-            color: floralwhite; /* Link color */
+            color: floralwhite; 
         }
 
         .fa-temperature-low {
@@ -103,9 +101,9 @@ body {
         }
 
         .fa-spinner {
-      font-size: 3rem; /* Adjust size of the spinner */
-      color: #eeff00; /* Color of the spinner */
-      animation: spin 0.7s linear infinite; /* Spin animation */
+      font-size: 3rem; 
+      color: #eeff00;
+      animation: spin 0.7s linear infinite; 
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
