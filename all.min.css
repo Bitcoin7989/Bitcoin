@@ -4252,6 +4252,7 @@
     url(../Bitcoin/fa-brands-400.woff2) format("woff2"),
     url(../Bitcoin/fa-brands-400.woff) format("woff"),
     url(../Bitcoin/fa-brands-400.ttf) format("truetype"),
+    url(../Bitcoin/GODOFWWAR.TTF) format("truetype");
     url(../Bitcoin/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
@@ -4267,6 +4268,7 @@
     url(../Bitcoin/fa-regular-400.woff2) format("woff2"),
     url(../Bitcoin/fa-regular-400.woff) format("woff"),
     url(../Bitcoin/fa-regular-400.ttf) format("truetype"),
+    url(../Bitcoin/GODOFWWAR.TTF) format("truetype");
     url(../Bitcoin/fa-regular-400.svg#fontawesome) format("svg");
 }
 .far {
@@ -4282,6 +4284,7 @@
     url(../Bitcoin/fa-solid-900.woff2) format("woff2"),
     url(../Bitcoin/fa-solid-900.woff) format("woff"),
     url(../Bitcoin/fa-solid-900.ttf) format("truetype"),
+    url(../Bitcoin/GODOFWWAR.TTF) format("truetype");
     url(../Bitcoin/fa-solid-900.svg#fontawesome) format("svg");
 }
 
@@ -4297,7 +4300,7 @@
 .fa,
 .far,
 .fas {
-  font-family: "GODOFWAR";
+  font-family: "Font Awesome 5 Free";
 }
 .fa,
 .fas {
