@@ -51,7 +51,8 @@ body {
 
 
        h1, h2, h3, p {
-             font-family: "Custom Font", sans-serif;
+             font-family: "Custom Font", GODOFWAR;
+                   font-family: "GODOFWAR";
                }
 
         h1 {
