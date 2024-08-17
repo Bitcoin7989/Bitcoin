@@ -4255,7 +4255,7 @@
     url(../Bitcoin/fa-brands-400.svg#fontawesome) format("svg");
 }
 .fab {
-  font-family: "Font Awesome 5 Brands";
+  font-family: "GODOFWAR";
 }
 @font-face {
   font-family: "Font Awesome 5 Free";
@@ -4287,17 +4287,17 @@
 
 
 @font-face {
-  font-family: "Custom Font";
+  font-family: "GODOFWAR";
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url(../Bitcoin/moon_get-Heavy.otf) format("opentype");
+  src: url(../Bitcoin/GODOFWWAR.TTF) format("truetype");
 }
 
 .fa,
 .far,
 .fas {
-  font-family: "Font Awesome 5 Free";
+  font-family: "GODOFWAR";
 }
 .fa,
 .fas {
