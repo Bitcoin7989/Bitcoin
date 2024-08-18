@@ -71,6 +71,15 @@ body {
             color: #fff;
             font-size: 2.5rem;
         }
+
+        .value {
+              font-weight: bold;
+              color: #fff;
+              font-size: 2.5rem;
+        }
+
+
+
         .space {
       height: 20px; 
       width: 10%; }
