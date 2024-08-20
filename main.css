@@ -49,6 +49,26 @@ body {
         }
 
 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+
+
        h1, h2, h3, p {
                    font-family: "GODOFWAR";
                }
