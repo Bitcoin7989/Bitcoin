@@ -4,15 +4,12 @@
                 }
                 );
             }, 1000);
-  setInterval(function() {
-                fetch('/temperature').then(response=>response.text()).then(data=>{
-                    document.getElementById('temperature').innerText = '' + data;
+
+ function updateSensorData() {
+                fetch('/sensorData').then(response => response.text()).then(data => {
+                let params = new URLSearchParams(data);
+                     document.getElementById('temperature').textContent = params.get('temperature') + ' °C';
+                     document.getElementById('humidity').textContent = params.get('humidity') + ' %';
                 }
                 );
-            }, 1000);
-  setInterval(function() {
-                fetch('/humidity').then(response=>response.text()).then(data=>{
-                    document.getElementById('humidity').innerText = '' + data;
-                }
-                );
-            }, 1000);
+    } setInterval(updateSensorData, 60000);
