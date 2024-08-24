@@ -1,29 +1,24 @@
- function updateRPM() {
-        fetch('/rpm')
-            .then(response => response.text())
-            .then(rpm => {
-                document.getElementById('rpm').innerText = rpm;
-            })
-            .catch(error => console.error('Error fetching RPM:', error));
-    }
-
-    function updateSensorData() {
-        fetch('/sensorData')
-            .then(response => response.text())
-            .then(data => {
-                const params = new URLSearchParams(data);
-                document.getElementById('temperature').innerText = params.get('temperature');
-                document.getElementById('humidity').innerText = params.get('humidity');
-            })
-            .catch(error => console.error('Error fetching sensor data:', error));
-    }
-
-    // Initial update
+function updateSensorData() {
+    fetch('/rpm')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('rpm').textContent = data;
+        });
+    
+    fetch('/sensorData')
+        .then(response => response.text())
+        .then(data => {
+            const params = new URLSearchParams(data);
+            document.getElementById('temperature').textContent = params.get('temperature') + ' °C';
+            document.getElementById('humidity').textContent = params.get('humidity') + ' %';
+        });
+}
+  // Initial update
     updateRPM();
     updateSensorData();
 
-    // Update RPM every 10 seconds
-    setInterval(updateRPM, 10000);
+    // Update RPM every 5 seconds
+    setInterval(updateRPM, 5000);
 
-    // Update sensor data every minute
-    setInterval(updateSensorData, 60000);
+// Update every 10 seconds
+setInterval(updateSensorData, 10000);
