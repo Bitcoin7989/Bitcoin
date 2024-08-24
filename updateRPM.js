@@ -5,7 +5,7 @@ function updateRPMData() {
             document.getElementById('rpm').textContent = data;
         });
 }
-setInterval(updateSensorData, 5000);
+setInterval(updateRPMData, 5000);
     
 function updateSensorData() {
     
