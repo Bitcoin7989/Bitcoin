@@ -13,11 +13,7 @@ function updateSensorData() {
             document.getElementById('humidity').textContent = params.get('humidity') + ' %';
         });
 }
-  // Initial update
-    updateRPM();
-    updateSensorData();
-
-    // Update RPM every 5 seconds
+ // Update RPM every 5 seconds
     setInterval(updateRPM, 5000);
 
 // Update every 10 seconds
