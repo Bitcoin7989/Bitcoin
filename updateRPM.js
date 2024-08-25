@@ -19,11 +19,18 @@ function updateSensorData() {
 }
 setInterval(updateSensorData, 10000);
 
-function updatePPM() {
+function updatemq135Data() {
     fetch('/ppm')
         .then(response => response.text())
         .then(data => {
-           document.getElementById('ppm').textContent = data;
-    });
-}
+            document.getElementById('ppm').innerText = data;
+            // Check PPM value and update status
+            const ppmValue = parseFloat(data);
+            const statusElement = document.getElementById('ppmStatus');
+            if (ppmValue >= <?php echo $ppmThreshold; ?>) { // Adjust this part to match your threshold value
+                statusElement.innerText = 'Warning: Concentration above threshold!';
+            } else {
+                statusElement.innerText = 'Concentration below threshold.';
+            }
+        });
 setInterval(updatePPM, 5000);
