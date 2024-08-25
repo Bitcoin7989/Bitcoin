@@ -26,7 +26,7 @@ function updatemq135Data() {
             document.getElementById('ppm').innerText = data;
             // Check PPM value and update status
             const ppmValue = parseFloat(data);
-            const statusElement = document.getElementById('ppmStatus');
+             document.getElementById('ppm').textContent = data;
         });
 }
 setInterval(updatemq135Data, 5000);
