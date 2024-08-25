@@ -20,16 +20,10 @@ function updateSensorData() {
 setInterval(updateSensorData, 10000);
 
 function updatePPM() {
-    fetch('/ppm').then(response => response.text()).then(data => {
-        document.getElementById('ppm').innerText = data;
-        const ppm = parseFloat(data);
-        if (ppm > ppmThreshold) {
-            document.getElementById('ppmStatus').innerText = 'Concentration above threshold! Take action.';
-            document.getElementById('ppmStatus').style.color = 'red';
-        } else {
-            document.getElementById('ppmStatus').innerText = 'Concentration below threshold.';
-            document.getElementById('ppmStatus').style.color = 'green';
-        }
+    fetch('/ppm')
+        .then(response => response.text())
+        .then(data => {
+           document.getElementById('ppm').textContent = data;
     });
 }
 setInterval(updatePPM, 5000);
