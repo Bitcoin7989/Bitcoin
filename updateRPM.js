@@ -27,11 +27,6 @@ function updatemq135Data() {
             // Check PPM value and update status
             const ppmValue = parseFloat(data);
             const statusElement = document.getElementById('ppmStatus');
-            if (ppmValue >= <?php echo $ppmThreshold; ?>) { // Adjust this part to match your threshold value
-                statusElement.innerText = 'Warning: Concentration above threshold!';
-            } else {
-                statusElement.innerText = 'Concentration below threshold.';
-            }
         });
 }
 setInterval(updatemq135Data, 5000);
