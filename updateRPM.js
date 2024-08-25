@@ -1,4 +1,3 @@
-const ppmThreshold = 100;
 function updateRPMData() {
     fetch('/rpm')
         .then(response => response.text())
@@ -28,13 +27,7 @@ function updateMQ135Data() {
             // Check PPM value and update status
             const ppmValue = parseFloat(data);
             const statusElement = document.getElementById('ppmStatus');
-            if (ppmValue > ppmThreshold) {
-                statusElement.textContent = 'Concentration above threshold!';
-                statusElement.style.color = 'red';
-            } else {
-                statusElement.textContent = 'Concentration below threshold.';
-                statusElement.style.color = 'green';
-            }
+           
         });
 }
 setInterval(updateMQ135Data, 5000); // Adjusted to match your data update interval
