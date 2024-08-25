@@ -5,7 +5,7 @@ function updateRPMData() {
             document.getElementById('rpm').textContent = data;
         });
 }
-setInterval(updateRPMData, 5000);
+setInterval(updateRPMData, 1000);
     
 function updateSensorData() {
     
@@ -31,4 +31,4 @@ function updateMQ135Data() {
            
         });
 }
-setInterval(updateMQ135Data, 5000); // Adjusted to match your data update interval
+setInterval(updateMQ135Data, 2000); // Adjusted to match your data update interval
