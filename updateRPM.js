@@ -33,4 +33,5 @@ function updatemq135Data() {
                 statusElement.innerText = 'Concentration below threshold.';
             }
         });
+}
 setInterval(updatePPM, 5000);
