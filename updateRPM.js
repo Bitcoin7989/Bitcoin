@@ -1,3 +1,4 @@
+const ppmThreshold = 100;
 function updateRPMData() {
     fetch('/rpm')
         .then(response => response.text())
