@@ -34,4 +34,4 @@ function updatemq135Data() {
             }
         });
 }
-setInterval(updatePPM, 5000);
+setInterval(updatemq135Data, 5000);
