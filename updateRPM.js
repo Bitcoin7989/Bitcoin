@@ -6,8 +6,9 @@ function updateRPMData() {
         });
 }
 setInterval(updateRPMData, 5000);
-
+    
 function updateSensorData() {
+    
     fetch('/sensorData')
         .then(response => response.text())
         .then(data => {
