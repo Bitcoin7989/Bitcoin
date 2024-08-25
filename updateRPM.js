@@ -6,9 +6,8 @@ function updateRPMData() {
         });
 }
 setInterval(updateRPMData, 5000);
-    
+
 function updateSensorData() {
-    
     fetch('/sensorData')
         .then(response => response.text())
         .then(data => {
@@ -19,14 +18,22 @@ function updateSensorData() {
 }
 setInterval(updateSensorData, 10000);
 
-function updatemq135Data() {
+function updateMQ135Data() {
     fetch('/ppm')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('ppm').innerText = data;
+            document.getElementById('ppm').textContent = data;
+            
             // Check PPM value and update status
             const ppmValue = parseFloat(data);
-             document.getElementById('ppm').textContent = data;
+            const statusElement = document.getElementById('ppmStatus');
+            if (ppmValue > ppmThreshold) {
+                statusElement.textContent = 'Concentration above threshold!';
+                statusElement.style.color = 'red';
+            } else {
+                statusElement.textContent = 'Concentration below threshold.';
+                statusElement.style.color = 'green';
+            }
         });
 }
-setInterval(updatemq135Data, 5000);
+setInterval(updateMQ135Data, 5000); // Adjusted to match your data update interval
