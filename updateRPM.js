@@ -1,11 +1,3 @@
-function updateRPMData() {
-    fetch('/rpm')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('rpm').textContent = data;
-        });
-}
-setInterval(updateRPMData, 1000);
     
 function updateSensorData() {
     
