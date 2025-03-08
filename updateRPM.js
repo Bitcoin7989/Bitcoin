@@ -34,8 +34,8 @@ function updateFanStatus() {
     fetch("/fan")
         .then(response => response.text())
         .then(status => {
-            document.getElementById("fanStatus").innerText = status;
-            document.getElementById("fanStatus").style.color = (status === "ON") ? "green" : "red";
+            document.getElementById("fan").innerText = status;
+            document.getElementById("fan").style.color = (status === "ON") ? "green" : "red";
         })
         .catch(error => {
             console.error("Error fetching fan status:", error);
