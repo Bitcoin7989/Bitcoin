@@ -23,20 +23,3 @@ function updateMQ135Data() {
         });
 }
 setInterval(updateMQ135Data, 2000); // Adjusted to match your data update interval
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    updateFanStatus(); // Initial check
-    setInterval(updateFanStatus, 1000); // Update every 1 second
-});
-
-function updateFanStatus() {
-    fetch("/fan")
-        .then(response => response.text())
-        .then(status => {
-            document.getElementById("fan").innerText = status;
-        })
-        .catch(error => {
-            console.error("Error fetching fan status:", error);
-        });
-}
