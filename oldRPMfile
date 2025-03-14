@@ -6,3 +6,23 @@ function updateRPMData() {
         });
 }
 setInterval(updateRPMData, 1000);
+
+
+
+old  --->
+
+document.addEventListener("DOMContentLoaded", function () {
+    updateFanStatus(); // Initial check
+    setInterval(updateFanStatus, 1000); // Update every 1 second
+});
+
+function updateFanStatus() {
+    fetch("/fan")
+        .then(response => response.text())
+        .then(status => {
+            document.getElementById("fan").innerText = status;
+        })
+        .catch(error => {
+            console.error("Error fetching fan status:", error);
+        });
+}
